@@ -8,19 +8,13 @@ function App() {
 
   useEffect(() => {
     if (count === 10) {
-      alert("Endi oshirolmaysiz")
+      alert("Endi oshirolmaysiz")  
+    if (count === -10) {
+      alert("Endi kamaytiraolmaysiz");
     } else {
       output.current = "";
     }
   })
-  useEffect(() => {
-    if (count === -10) {
-      alert("Endi kamaytiraolmaysiz");
-      
-    } else {
-      output.current = "";
-    }
-  });
   const output = useRef(null);
   return (
     <div className="App">
